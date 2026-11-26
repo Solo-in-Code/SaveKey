@@ -1,9 +1,9 @@
-# SaveKey — a KeePass password manager for iPhone
+<h1 align="center"><img src="Branding/savekey-banner.svg" alt="SaveKey" width="480"></h1>
 
-SaveKey is a native SwiftUI app in the spirit of **KeePassDX**. It opens, edits and saves standard
-KeePass `.kdbx` databases wherever they live (On My iPhone, iCloud Drive, Dropbox, OneDrive, a
-Nextcloud provider and so on), so the same file keeps working with KeePass, KeePassXC and KeePassDX
-on your other devices.
+**SaveKey is a KeePass password manager for iPhone**: a native SwiftUI app in the spirit of
+**KeePassDX**. It opens, edits and saves standard KeePass `.kdbx` databases wherever they live (On
+My iPhone, iCloud Drive, Dropbox, OneDrive, a Nextcloud provider and so on), so the same file keeps
+working with KeePass, KeePassXC and KeePassDX on your other devices.
 
 SaveKey is free and open-source software, licensed under the
 [GNU Affero General Public License v3.0 or later](LICENSE); only the SaveKey logo is excluded (see
@@ -157,8 +157,8 @@ AutoFill/                  Password AutoFill credential-provider extension
 Shared/                    code used by both: unlock screen, sessions, file access, languages,
                            Face ID keychain store, settings, clipboard, icons
 Config/Signing.xcconfig    loads your SaveKey-Signing.xcconfig (bundle ID, team)
-Branding/                  the SaveKey logo: masters, make_logo.py and the terms for using it
-                           (all rights reserved, not open source)
+Branding/                  the SaveKey logo and banners: masters, the scripts that draw them and
+                           the terms for using them (all rights reserved, not open source)
 Shared/Localization/       translations (Localizable.strings and InfoPlist.strings per language)
 Tools/Localization/        translation tables; make_strings.py writes Shared/Localization,
                            check_translations.py finds texts that still need translating

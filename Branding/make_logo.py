@@ -76,11 +76,9 @@ def ridge_segments():
     return segments
 
 
-def svg(background):
-    out = [SVG_NOTICE,
-           '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">']
-    if background:
-        out.append(f'<rect width="1024" height="1024" fill="{BACKGROUND}"/>')
+def mark_elements():
+    """The fingerprint and the keyhole as SVG elements, in the coordinates of the 1024 x 1024 icon."""
+    out = []
     for pts, colour in ridge_segments():
         d = "M" + " L".join(f"{x:.2f},{y:.2f}" for x, y in pts)
         out.append(f'<path d="{d}" fill="none" stroke="{colour}" stroke-width="{STROKE}" '
@@ -90,6 +88,24 @@ def svg(background):
     d = "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in stem) + " Z"
     out.append(f'<circle cx="{CX}" cy="{HEAD_Y}" r="{HEAD_R}" fill="{IVORY}"/>')
     out.append(f'<path d="{d}" fill="{IVORY}" stroke="{IVORY}" stroke-width="12" stroke-linejoin="round"/>')
+    return out
+
+
+def mark_bounds():
+    """The box the fingerprint covers, its round line ends included: (left, top, right, bottom) in the icon's
+    coordinates. The keyhole lies inside it."""
+    points = [p for pts, _ in ridge_segments() for p in pts]
+    half = STROKE / 2
+    return (min(x for x, _ in points) - half, min(y for _, y in points) - half,
+            max(x for x, _ in points) + half, max(y for _, y in points) + half)
+
+
+def svg(background):
+    out = [SVG_NOTICE,
+           '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">']
+    if background:
+        out.append(f'<rect width="1024" height="1024" fill="{BACKGROUND}"/>')
+    out += mark_elements()
     out.append("</svg>")
     return "\n".join(out) + "\n"
 
