@@ -1,0 +1,14 @@
+# Normalise line endings for text files.
+* text=auto
+
+# Test databases and key files are compared byte for byte; never touch their line endings.
+Packages/KeePassCore/Tests/KeePassCoreTests/Fixtures/** binary
+*.kdbx binary
+*.key binary
+*.keyx binary
+
+# Read line by line by the passphrase generator.
+Packages/KeePassCore/Sources/KeePassCore/Resources/eff_large_wordlist.txt text eol=lf
+
+# Shell scripts must keep Unix line endings to run.
+*.sh text eol=lf

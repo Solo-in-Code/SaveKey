@@ -1,0 +1,19 @@
+// Signing settings for SaveKey.
+//
+// Put your own values in a file named "SaveKey-Signing.xcconfig" placed NEXT TO the
+// SaveKey folder (not inside it), for example:
+//
+//     DEVELOPMENT_TEAM = ABCDE12345
+//     BUNDLE_ID_BASE = com.yourname.savekey
+//
+// Because that file lives outside the project folder, replacing the SaveKey folder with
+// a newer version never erases your settings, and it is never committed to the repository.
+// In a git clone, "next to the SaveKey folder" means next to the cloned folder.
+// A "KeyCrate-Signing.xcconfig" from before the rename is still read; if both exist,
+// SaveKey-Signing.xcconfig wins.
+
+DEVELOPMENT_TEAM =
+BUNDLE_ID_BASE = com.example.savekey
+
+#include? "../../KeyCrate-Signing.xcconfig"
+#include? "../../SaveKey-Signing.xcconfig"

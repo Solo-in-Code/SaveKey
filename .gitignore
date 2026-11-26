@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata/
+DerivedData/
+build/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Python
+__pycache__/
+*.pyc
+
+# Your signing settings belong next to the repository folder, never inside it
+# (see "Keep your signing settings between updates" in the README).
+SaveKey-Signing.xcconfig
+KeyCrate-Signing.xcconfig
+
+# Copies of the app sources made by Tools/SyncCheck/run.sh
+Tools/SyncCheck/Sources/AppLogic/App/
