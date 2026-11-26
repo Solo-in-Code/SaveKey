@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     container: swift:6.0
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: KeePassCore tests
         run: swift test --package-path Packages/KeePassCore
       - name: Sync check
@@ -24,7 +24,7 @@ jobs:
     name: Translations
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Every on-screen text is translated
         run: python3 Tools/Localization/check_translations.py
       - name: The .strings files match the translation tables
