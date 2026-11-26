@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  engine:
+    name: Engine and sync (Linux)
+    runs-on: ubuntu-latest
+    container: swift:6.0
+    steps:
+      - uses: actions/checkout@v4
+      - name: KeePassCore tests
+        run: swift test --package-path Packages/KeePassCore
+      - name: Sync check
+        run: bash Tools/SyncCheck/run.sh
+
+  translations:
+    name: Translations
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every on-screen text is translated
+        run: python3 Tools/Localization/check_translations.py
+      - name: The .strings files match the translation tables
+        run: |
+          python3 Tools/Localization/make_strings.py
+          git diff --exit-code -- Shared/Localization
