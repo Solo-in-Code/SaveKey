@@ -175,3 +175,6 @@ K("The SaveKey logo is not covered by this license; all rights reserved.",
   "Il logo di SaveKey non è coperto da questa licenza; tutti i diritti riservati.",
   "O logotipo do SaveKey não é coberto por esta licença; todos os direitos reservados.",
   "O logótipo do SaveKey não está abrangido por esta licença; todos os direitos reservados.")
+K("Source code", "Quellcode", "Código fuente", "Code source", "Codice sorgente", "Código-fonte")
+K("Privacy policy", "Datenschutzerklärung", "Política de privacidad", "Politique de confidentialité",
+  "Informativa sulla privacy", "Política de privacidade")

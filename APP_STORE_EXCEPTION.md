@@ -20,8 +20,8 @@ This permission applies only if all of the following are true:
    store listing or in the app.
 2. Recipients can read the GNU AGPL and this permission, for example through a link in the app.
 3. Unless you publish on behalf of the SaveKey project (the maintainers of the official SaveKey
-   source repository), your version uses a name and an icon that make clear it is not the official
-   SaveKey app.
+   source repository, <https://github.com/Solo-in-Code/SaveKey>), your version uses a name and an icon that make clear it is not
+   the official SaveKey app.
 
 ## Notes
 

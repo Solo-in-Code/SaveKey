@@ -280,6 +280,7 @@
 "Please check the details before saving." = "Controlla i dati prima di salvare.";
 "Preview" = "Anteprima";
 "Previous version" = "Versione precedente";
+"Privacy policy" = "Informativa sulla privacy";
 "Prompt for %@ automatically" = "Richiedi %@ automaticamente";
 "Protected" = "Protetto";
 "QuickType suggestions share usernames and website addresses (never passwords) with iOS so it can offer them above the keyboard. They update when you open or save a database." = "I suggerimenti QuickType condividono nomi utente e indirizzi web (mai le password) con iOS per mostrarli sopra la tastiera. Si aggiornano quando apri o salvi un database.";
@@ -335,6 +336,7 @@
 "Show security code" = "Mostra codice di sicurezza";
 "Show website icons" = "Mostra icone dei siti web";
 "Sort entries by" = "Ordina voci per";
+"Source code" = "Codice sorgente";
 "Space" = "Spazio";
 "Special (!#$%…)" = "Speciali (!#$%…)";
 "Standard icons" = "Icone standard";

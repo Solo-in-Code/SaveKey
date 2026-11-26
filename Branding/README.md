@@ -28,4 +28,4 @@ The logo is in these files:
 - **Use the logo, or something that looks like it, for another app, product or service.**
 
 The source code stays free under the GNU AGPL: replacing these image files is all a version of your
-own needs. For any other use of the logo, ask the SaveKey project.
+own needs. For any other use of the logo, ask the SaveKey project by opening an issue at <https://github.com/Solo-in-Code/SaveKey/issues>.

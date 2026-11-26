@@ -29,6 +29,8 @@ enum AppConfig {
     /// Shown in Settings › License. SaveKey is licensed under the GNU AGPL, version 3 or later.
     static let copyrightNotice = "© 2026 the SaveKey contributors"
     static let licenseURL = URL(string: "https://www.gnu.org/licenses/agpl-3.0.html")!
+    static let sourceCodeURL = URL(string: "https://github.com/Solo-in-Code/SaveKey")!
+    static let privacyPolicyURL = URL(string: "https://github.com/Solo-in-Code/SaveKey/blob/main/PRIVACY.md")!
 }
 
 extension KDBXError {

@@ -1,6 +1,6 @@
 # Privacy policy
 
-*Last updated: 25 November 2026*
+*Last updated: 26 November 2026*
 
 SaveKey is a password manager for iPhone that works with KeePass databases.
 
@@ -64,10 +64,10 @@ SaveKey collects no data from anyone, including children.
 
 ## Changes to this policy
 
-Changes are published in the SaveKey source repository, where every earlier version of this policy
-stays visible in the history.
+Changes are published in the [SaveKey source repository](https://github.com/Solo-in-Code/SaveKey), where every earlier version of
+this policy stays visible in its [history](https://github.com/Solo-in-Code/SaveKey/commits/main/PRIVACY.md).
 
 ## Questions
 
-Open an issue in the SaveKey source repository. For security problems, follow
-[SECURITY.md](SECURITY.md) instead.
+Open an issue at <https://github.com/Solo-in-Code/SaveKey/issues>. For security problems, follow [SECURITY.md](SECURITY.md)
+instead.

@@ -25,13 +25,14 @@ Check Apple's current rules when the time comes; they change.
 - The GNU AGPL together with [APP_STORE_EXCEPTION.md](../APP_STORE_EXCEPTION.md) allows App Store
   distribution, including code from other contributors, who agree to the same terms
   ([CONTRIBUTING.md](../CONTRIBUTING.md) and the pull request template).
-- Link to the source code in the App Store description, and add a "Source code" link next to the
-  license in Settings › License (the `License` section in `App/Views/AppSettingsView.swift`).
+- Settings › License already links to the source code and to the privacy policy
+  (`AppConfig.sourceCodeURL` and `AppConfig.privacyPolicyURL` in `Shared/AppConfig.swift`). Link to
+  the source code (<https://github.com/Solo-in-Code/SaveKey>) in the App Store description too.
 
 ## Privacy
 
-- **Privacy policy URL:** required for every app. Use the address of [PRIVACY.md](../PRIVACY.md) in the
-  public repository, and also link to it from inside the app, for example in Settings › License.
+- **Privacy policy URL:** required for every app. Use <https://github.com/Solo-in-Code/SaveKey/blob/main/PRIVACY.md>; the app
+  already links to it in Settings › License.
 - **App Privacy questions** in App Store Connect: SaveKey collects no data, so the answer is
   "Data Not Collected". Website icons are requested straight from each website, as a browser
   does, and nothing reaches the SaveKey project; `PRIVACY.md` explains this. If a feature ever

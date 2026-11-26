@@ -115,6 +115,12 @@ struct AppSettingsView: View {
                         Link(destination: AppConfig.licenseURL) {
                             Label("View the license", systemImage: "doc.text")
                         }
+                        Link(destination: AppConfig.sourceCodeURL) {
+                            Label("Source code", systemImage: "chevron.left.forwardslash.chevron.right")
+                        }
+                        Link(destination: AppConfig.privacyPolicyURL) {
+                            Label("Privacy policy", systemImage: "hand.raised")
+                        }
                     } header: {
                         Text("License")
                     }
