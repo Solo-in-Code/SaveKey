@@ -1,0 +1,46 @@
+{
+ "cipher": "chacha20",
+ "entries": [
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "",
+   "password": "12345",
+   "tags": [],
+   "title": "Sample Entry #2",
+   "url": "https://keepass.info/help/kb/testform.html",
+   "username": "Michael321",
+   "uuid": "419A721D-A157-0849-BA11-9F20647C1906"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "Notes",
+   "password": "Password",
+   "tags": [],
+   "title": "Sample Entry",
+   "url": "https://keepass.info/",
+   "username": "User Name",
+   "uuid": "5410C82E-C5B0-884B-BECE-EEECE6AE218C"
+  }
+ ],
+ "groups": [
+  "",
+  "General",
+  "Homebanking",
+  "Internet",
+  "Network",
+  "Windows",
+  "eMail"
+ ],
+ "kdf": "argon2",
+ "name": "Chacha20 Sample database",
+ "version": [
+  4,
+  0
+ ]
+}

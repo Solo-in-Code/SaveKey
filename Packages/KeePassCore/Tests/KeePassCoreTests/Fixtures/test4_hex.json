@@ -1,0 +1,59 @@
+{
+ "cipher": "chacha20",
+ "entries": [
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "Notes",
+   "password": "Password",
+   "tags": [],
+   "title": "Sample Entry",
+   "url": "http://keepass.info/",
+   "username": "User Name",
+   "uuid": "24046E93-16A6-4747-8D2A-DBFCF79C57FD"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 3,
+   "notes": "",
+   "password": "12345",
+   "tags": [],
+   "title": "Sample Entry #2",
+   "url": "http://keepass.info/help/kb/kb090406_testform.html",
+   "username": "Michael3211",
+   "uuid": "50B51027-766D-C14E-9FAF-7548EDF6DB7E"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "A unic®de note...",
+   "password": "rOkWdgCMpenSnSMjUkia®",
+   "tags": [],
+   "title": "Sample Unic®de Entry",
+   "url": "https://unic®de.org",
+   "username": "username®",
+   "uuid": "6345DF7E-62B0-1F4F-84D9-D440E592FE80"
+  }
+ ],
+ "groups": [
+  "",
+  "General",
+  "Homebanking",
+  "Internet",
+  "Network",
+  "Windows",
+  "eMail"
+ ],
+ "kdf": "argon2",
+ "name": "",
+ "version": [
+  4,
+  0
+ ]
+}

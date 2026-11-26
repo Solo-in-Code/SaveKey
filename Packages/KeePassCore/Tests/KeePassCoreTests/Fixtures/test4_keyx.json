@@ -1,0 +1,27 @@
+{
+ "cipher": "chacha20",
+ "entries": [
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "Notes",
+   "password": "Password",
+   "tags": [],
+   "title": "Sample Entry",
+   "url": "https://keepass.info/",
+   "username": "User Name",
+   "uuid": "E060A4B0-15AC-DE42-A4E2-EAD648D81429"
+  }
+ ],
+ "groups": [
+  ""
+ ],
+ "kdf": "argon2",
+ "name": "",
+ "version": [
+  4,
+  0
+ ]
+}

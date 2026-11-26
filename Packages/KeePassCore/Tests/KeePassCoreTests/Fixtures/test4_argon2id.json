@@ -1,0 +1,13 @@
+{
+ "cipher": "aes256",
+ "entries": [],
+ "groups": [
+  ""
+ ],
+ "kdf": "argon2id",
+ "name": "",
+ "version": [
+  4,
+  0
+ ]
+}

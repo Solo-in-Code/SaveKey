@@ -1,0 +1,27 @@
+{
+ "cipher": "aes256",
+ "entries": [
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "",
+   "password": "",
+   "tags": [],
+   "title": "foo",
+   "url": "",
+   "username": "",
+   "uuid": "CF022B06-D7EE-4477-B670-1DE4332229A5"
+  }
+ ],
+ "groups": [
+  ""
+ ],
+ "kdf": "argon2",
+ "name": "extra",
+ "version": [
+  4,
+  0
+ ]
+}

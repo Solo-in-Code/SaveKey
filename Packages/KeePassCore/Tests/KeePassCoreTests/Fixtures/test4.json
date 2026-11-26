@@ -1,0 +1,232 @@
+{
+ "cipher": "chacha20",
+ "entries": [
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "",
+   "password": "pass",
+   "tags": [],
+   "title": "none_date",
+   "url": "",
+   "username": "user",
+   "uuid": "0165B0FC-03E9-11EE-9099-100BA9B14CAC"
+  },
+  {
+   "attachments": [],
+   "custom": {
+    "common_field": "common field value",
+    "custom_field": "custom field value"
+   },
+   "group": "foobar_group/subgroup",
+   "history": 4,
+   "notes": "",
+   "password": "foobar",
+   "tags": [],
+   "title": "subentry",
+   "url": "",
+   "username": "foobar",
+   "uuid": "1E73786C-7495-8C4C-9B3D-FF273AAD5B54"
+  },
+  {
+   "attachments": [
+    [
+     "foo.txt",
+     "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
+   ],
+   "custom": {
+    "multiline": "hello\nworld"
+   },
+   "group": "",
+   "history": 9,
+   "notes": "",
+   "password": "foobar",
+   "tags": [
+    "tag1",
+    "tag2"
+   ],
+   "title": "foobar_entry",
+   "url": "",
+   "username": "foobar",
+   "uuid": "5060E2E0-29AA-11E8-8AA8-0021CCB990C2"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "foobar_group",
+   "history": 2,
+   "notes": "",
+   "password": "foobar",
+   "tags": [],
+   "title": "foobar_entry",
+   "url": "",
+   "username": "foobar",
+   "uuid": "5DA63F9A-29AA-11E8-8AA8-0021CCB990C2"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "foobar_group/subgroup",
+   "history": 0,
+   "notes": "",
+   "password": "foobar",
+   "tags": [],
+   "title": "foobar_entry",
+   "url": "",
+   "username": "foobar",
+   "uuid": "6A7F0742-29AA-11E8-8AA8-0021CCB990C2"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 1,
+   "notes": "",
+   "password": "{REF:P@I:E402C98369ED4D18AD3D168117E306E6}",
+   "tags": [],
+   "title": "foobar_entry - Clone of clone",
+   "url": "",
+   "username": "{REF:U@I:E402C98369ED4D18AD3D168117E306E6}",
+   "uuid": "6EED7A49-C302-42B4-B718-430F99F4CD46"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "",
+   "password": "",
+   "tags": [],
+   "title": "",
+   "url": "",
+   "username": "blank_title",
+   "uuid": "71FDDA71-240E-45D2-B101-0591DEEC30C6"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 1,
+   "notes": "",
+   "password": "A{REF:P@I:5060E2E029AA11E88AA80021CCB990C2}BC",
+   "tags": [],
+   "title": "foobar_entry - Clone with prefix and suffix",
+   "url": "",
+   "username": "domain\\{REF:U@I:5060E2E029AA11E88AA80021CCB990C2}2",
+   "uuid": "97A88542-4A82-461C-81EC-BC925231748C"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "",
+   "password": "poop",
+   "tags": [],
+   "title": "testing_new",
+   "url": "",
+   "username": "lkj",
+   "uuid": "B21C066A-2FED-11E8-97FB-0021CCB990C2"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "Работа",
+   "history": 0,
+   "notes": "",
+   "password": "1",
+   "tags": [],
+   "title": "Тест",
+   "url": "localhost",
+   "username": "p",
+   "uuid": "C22112E4-1D07-EA45-8452-D562062DBF35"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "foobar_group",
+   "history": 0,
+   "notes": "entry notes",
+   "password": "passw0rd",
+   "tags": [],
+   "title": "group_entry",
+   "url": "http://example.com",
+   "username": "foobar_user",
+   "uuid": "CC5F7ECD-2A00-48CA-9621-C222A347B0BB"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "",
+   "password": "{REF:P@I:5060E2E029AA11E88AA80021CCB990C2}",
+   "tags": [],
+   "title": "foobar_entry - Clone",
+   "url": "",
+   "username": "{REF:U@I:5060E2E029AA11E88AA80021CCB990C2}",
+   "uuid": "E402C983-69ED-4D18-AD3D-168117E306E6"
+  },
+  {
+   "attachments": [],
+   "custom": {
+    "foobar_attribute": "foobar"
+   },
+   "group": "",
+   "history": 2,
+   "notes": "root entry notes",
+   "password": "passw0rd",
+   "tags": [],
+   "title": "root_entry",
+   "url": "http://example.com",
+   "username": "foobar_user",
+   "uuid": "EB90914E-5DD3-8F78-9669-DD1FB39791DC"
+  },
+  {
+   "attachments": [],
+   "custom": {},
+   "group": "",
+   "history": 0,
+   "notes": "",
+   "password": "",
+   "tags": [],
+   "title": "quote test -> \" <-",
+   "url": "",
+   "username": "",
+   "uuid": "EF147671-9415-AC6B-9A80-66B0E70D529E"
+  },
+  {
+   "attachments": [],
+   "custom": {
+    "common_field": "common field value"
+   },
+   "group": "foobar_group/subgroup",
+   "history": 0,
+   "notes": "",
+   "password": "asdf",
+   "tags": [],
+   "title": "subentry2",
+   "url": "",
+   "username": "foobar",
+   "uuid": "FA0A82F2-5E33-E949-808D-5E3CB20B4CDE"
+  }
+ ],
+ "groups": [
+  "",
+  "",
+  "foobar_group",
+  "foobar_group/subgroup",
+  "foobar_group/subgroup/subgroup2",
+  "foobar_group2",
+  "Работа"
+ ],
+ "kdf": "argon2",
+ "name": "",
+ "version": [
+  4,
+  0
+ ]
+}
