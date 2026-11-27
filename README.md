@@ -107,6 +107,10 @@ Password AutoFill needs a paid Apple Developer Program membership, so there are 
 | `SaveKey-Free.xcodeproj` | Free Apple ID (Personal Team) | Everything except Password AutoFill. Needs no special capabilities. |
 | `SaveKey.xcodeproj` | Paid developer account | Full app plus the AutoFill extension. |
 
+Open only one of the two at a time. Both use the same `KeePassCore` package, and Xcode can't open
+a local package in two projects at once: the second one reports *Missing package product
+'KeePassCore'*. Close the other project, then close and reopen this one.
+
 Steps for the free project:
 
 1. Open `SaveKey-Free.xcodeproj` and select the **SaveKey** target.
