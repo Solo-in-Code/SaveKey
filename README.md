@@ -221,9 +221,10 @@ The engine (`Packages/KeePassCore`) was built and tested with Swift 6.0 (`swift 
   `de-CH`, `es-419`) was tested separately. The translations were written for SaveKey and have not
   been reviewed by native speakers yet.
 
-The **iOS app** has been built and run on an iPhone, including payment cards and website icons.
-Later changes (dark mode, icon colours, secure notes, languages, and the screens for syncing) have only
-been syntax-checked so far: the SwiftUI code needs Xcode to compile.
+The **iOS app** is built with Xcode 27 from `SaveKey-Free.xcodeproj` and runs on an iPhone with
+iOS 27, including payment cards, website icons and syncing. `SaveKey.xcodeproj`, which adds the
+Password AutoFill extension, also builds (for the iPhone simulator), but AutoFill itself hasn't been
+tried with this version yet: running it on an iPhone needs a paid developer account.
 
 ## Known limitations
 
