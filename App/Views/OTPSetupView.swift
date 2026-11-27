@@ -214,8 +214,10 @@ final class QRScannerController: UIViewController, AVCaptureMetadataOutputObject
         case .authorized:
             configure()
         case .notDetermined:
-            AVCaptureDevice.requestAccess(for: .video) { granted in
-                Task { @MainActor [weak self] in
+            // [weak self] belongs on the outer closure: a weak capture only in the inner one would make this
+            // closure hold the scanner strongly anyway (Swift 6.4 warns about that).
+            AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                Task { @MainActor in
                     if granted { self?.configure() } else { self?.showMessage(String(localized: "Camera access was denied.")) }
                 }
             }
