@@ -32,6 +32,7 @@
 "All entries" = "Tutte le voci";
 "All entries and groups in the Recycle Bin will be permanently deleted." = "Tutte le voci e i gruppi nel Cestino verranno eliminati definitivamente.";
 "Allow camera access in Settings to scan QR codes, or enter the secret manually." = "Consenti l'accesso alla fotocamera in Impostazioni per scansionare i codici QR, oppure inserisci la chiave segreta manualmente.";
+"Allow other keyboards" = "Consenti altre tastiere";
 "Also include" = "Includi anche";
 "Another device or sync tool put back a version of the database without your latest changes, more than once. Your changes are kept on this iPhone, but SaveKey stopped saving them automatically. If you sync with “rclone copy”, use “rclone bisync” so changes go both ways." = "Un altro dispositivo o strumento di sincronizzazione ha ripristinato più volte una versione del database senza le tue ultime modifiche. Le modifiche restano su questo iPhone, ma SaveKey ha smesso di salvarle automaticamente. Se sincronizzi con «rclone copy», usa «rclone bisync» così le modifiche vanno in entrambe le direzioni.";
 "App settings" = "Impostazioni app";
@@ -45,6 +46,7 @@
 "Banking" = "Banca";
 "Base32 secret key" = "Chiave segreta (Base32)";
 "Biometrics" = "Biometria";
+"Block screenshots" = "Blocca gli screenshot";
 "Brackets ([]{}()<>)" = "Parentesi ([]{}()<>)";
 "Calibrate for 1 second" = "Calibra su 1 secondo";
 "Camera access was denied." = "L'accesso alla fotocamera è stato negato.";
@@ -167,7 +169,9 @@
 "Group name" = "Nome del gruppo";
 "Groups" = "Gruppi";
 "Has one-time code" = "Ha un codice monouso";
+"Hidden while your screen is shared" = "Nascosto mentre lo schermo è condiviso";
 "Hide %@" = "Nascondi %@";
+"Hide during screen sharing" = "Nascondi durante la condivisione dello schermo";
 "Hide password" = "Nascondi password";
 "Hide security code" = "Nascondi codice di sicurezza";
 "Higher key-derivation cost makes brute-force attacks slower but unlocking slower too. Keep Argon2 memory at 64 MiB or less so Password AutoFill (which has limited memory) can still unlock the database." = "Un costo maggiore di derivazione della chiave rallenta gli attacchi di forza bruta, ma anche lo sblocco. Mantieni la memoria di Argon2 a 64 MiB o meno, così l'inserimento automatico delle password (con memoria limitata) può ancora sbloccare il database.";
@@ -265,6 +269,7 @@
 "Open Settings" = "Apri Impostazioni";
 "Opened read-only. Changes cannot be saved." = "Aperto in sola lettura. Le modifiche non possono essere salvate.";
 "Opens read-only" = "Si apre in sola lettura";
+"Other keyboards, including AI keyboards, can send what you type to their developers. When this is off, SaveKey always uses Apple’s keyboard. The change applies after you close SaveKey and open it again." = "Altre tastiere, comprese quelle con IA, possono inviare ciò che scrivi ai loro sviluppatori. Quando questa opzione è disattivata, SaveKey usa sempre la tastiera di Apple. La modifica si applica dopo aver chiuso e riaperto SaveKey.";
 "Overwrite with my changes" = "Sovrascrivi con le mie modifiche";
 "Parallelism: %lld" = "Parallelismo: %lld";
 "Passphrase" = "Passphrase";
@@ -313,10 +318,14 @@
 "SaveKey is free software: you can share and change it under the terms of the GNU Affero General Public License, version 3 or (at your option) any later version. It comes with absolutely no warranty." = "SaveKey è software libero: puoi ridistribuirlo e modificarlo secondo i termini della GNU Affero General Public License, versione 3 o (a tua scelta) qualsiasi versione successiva. Viene fornito senza alcuna garanzia.";
 "SaveKey now follows “%@” in “%@”" = "SaveKey ora segue «%1$@» in «%2$@»";
 "SaveKey reads and writes standard KeePass databases (KDBX 3.1 and 4.x), compatible with KeePass, KeePassXC, KeePassDX and other KeePass apps." = "SaveKey legge e scrive database KeePass standard (KDBX 3.1 e 4.x), compatibili con KeePass, KeePassXC, KeePassDX e altre app KeePass.";
+"SaveKey stays hidden while the screen is recorded, mirrored, shared or controlled remotely, and comes back when that stops." = "SaveKey resta nascosto mentre lo schermo viene registrato, duplicato, condiviso o controllato da remoto, e ricompare quando tutto ciò termina.";
 "SaveKey will open the database by its name in this folder, so it keeps working when a sync tool replaces the file with a new copy." = "SaveKey aprirà il database tramite il nome in questa cartella, così continua a funzionare quando uno strumento di sincronizzazione sostituisce il file con una nuova copia.";
 "Scan card with camera" = "Scansiona carta con la fotocamera";
 "Scan QR code" = "Scansiona codice QR";
 "Scan the front of the card, then the back. The card is read on this iPhone — nothing is uploaded. Check the details before saving." = "Scansiona il fronte della carta, poi il retro. La carta viene letta su questo iPhone: non viene caricato nulla. Controlla i dati prima di salvare.";
+"Screen protection" = "Protezione dello schermo";
+"Screenshots of SaveKey are blank. You can allow them in Settings." = "Gli screenshot di SaveKey risultano vuoti. Puoi consentirli nelle Impostazioni.";
+"Screenshots of SaveKey come out blank, so Siri and other assistants that read the screen can’t see your passwords. On iOS 27.2 or later, you can also add SaveKey under Settings › Siri › Excluded Apps." = "Gli screenshot di SaveKey risultano vuoti, quindi Siri e gli altri assistenti che leggono lo schermo non possono vedere le tue password. Con iOS 27.2 o versioni successive puoi anche aggiungere SaveKey in Impostazioni › Siri › App escluse.";
 "Search" = "Cerca";
 "Search all entries" = "Cerca in tutte le voci";
 "Secret" = "Chiave segreta";
@@ -423,6 +432,7 @@
 "Website icons" = "Icone dei siti web";
 "When enabled, the derived key is stored in this device's Keychain, protected by %@." = "Se attivo, la chiave derivata viene salvata nel portachiavi di questo dispositivo, protetta da %@.";
 "When you sign in to a website or app, tap the key icon above the keyboard and choose SaveKey." = "Quando accedi a un sito web o a un'app, tocca l'icona della chiave sopra la tastiera e scegli SaveKey.";
+"While the screen is recorded, mirrored, shared or controlled remotely, for example by an AI assistant, SaveKey shows only its logo." = "Mentre lo schermo viene registrato, duplicato, condiviso o controllato da remoto, ad esempio da un assistente IA, SaveKey mostra solo il suo logo.";
 "Words from the EFF long word list (7,776 words, ~12.9 bits each)." = "Parole dalla lista lunga dell'EFF (7.776 parole, ~12,9 bit ciascuna).";
 "Words: %lld" = "Parole: %lld";
 "Write your note" = "Scrivi la tua nota";

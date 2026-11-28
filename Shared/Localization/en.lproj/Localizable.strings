@@ -32,6 +32,7 @@
 "All entries" = "All entries";
 "All entries and groups in the Recycle Bin will be permanently deleted." = "All entries and groups in the Recycle Bin will be permanently deleted.";
 "Allow camera access in Settings to scan QR codes, or enter the secret manually." = "Allow camera access in Settings to scan QR codes, or enter the secret manually.";
+"Allow other keyboards" = "Allow other keyboards";
 "Also include" = "Also include";
 "Another device or sync tool put back a version of the database without your latest changes, more than once. Your changes are kept on this iPhone, but SaveKey stopped saving them automatically. If you sync with “rclone copy”, use “rclone bisync” so changes go both ways." = "Another device or sync tool put back a version of the database without your latest changes, more than once. Your changes are kept on this iPhone, but SaveKey stopped saving them automatically. If you sync with “rclone copy”, use “rclone bisync” so changes go both ways.";
 "App settings" = "App settings";
@@ -45,6 +46,7 @@
 "Banking" = "Banking";
 "Base32 secret key" = "Base32 secret key";
 "Biometrics" = "Biometrics";
+"Block screenshots" = "Block screenshots";
 "Brackets ([]{}()<>)" = "Brackets ([]{}()<>)";
 "Calibrate for 1 second" = "Calibrate for 1 second";
 "Camera access was denied." = "Camera access was denied.";
@@ -167,7 +169,9 @@
 "Group name" = "Group name";
 "Groups" = "Groups";
 "Has one-time code" = "Has one-time code";
+"Hidden while your screen is shared" = "Hidden while your screen is shared";
 "Hide %@" = "Hide %@";
+"Hide during screen sharing" = "Hide during screen sharing";
 "Hide password" = "Hide password";
 "Hide security code" = "Hide security code";
 "Higher key-derivation cost makes brute-force attacks slower but unlocking slower too. Keep Argon2 memory at 64 MiB or less so Password AutoFill (which has limited memory) can still unlock the database." = "Higher key-derivation cost makes brute-force attacks slower but unlocking slower too. Keep Argon2 memory at 64 MiB or less so Password AutoFill (which has limited memory) can still unlock the database.";
@@ -265,6 +269,7 @@
 "Open Settings" = "Open Settings";
 "Opened read-only. Changes cannot be saved." = "Opened read-only. Changes cannot be saved.";
 "Opens read-only" = "Opens read-only";
+"Other keyboards, including AI keyboards, can send what you type to their developers. When this is off, SaveKey always uses Apple’s keyboard. The change applies after you close SaveKey and open it again." = "Other keyboards, including AI keyboards, can send what you type to their developers. When this is off, SaveKey always uses Apple’s keyboard. The change applies after you close SaveKey and open it again.";
 "Overwrite with my changes" = "Overwrite with my changes";
 "Parallelism: %lld" = "Parallelism: %lld";
 "Passphrase" = "Passphrase";
@@ -313,10 +318,14 @@
 "SaveKey is free software: you can share and change it under the terms of the GNU Affero General Public License, version 3 or (at your option) any later version. It comes with absolutely no warranty." = "SaveKey is free software: you can share and change it under the terms of the GNU Affero General Public License, version 3 or (at your option) any later version. It comes with absolutely no warranty.";
 "SaveKey now follows “%@” in “%@”" = "SaveKey now follows “%@” in “%@”";
 "SaveKey reads and writes standard KeePass databases (KDBX 3.1 and 4.x), compatible with KeePass, KeePassXC, KeePassDX and other KeePass apps." = "SaveKey reads and writes standard KeePass databases (KDBX 3.1 and 4.x), compatible with KeePass, KeePassXC, KeePassDX and other KeePass apps.";
+"SaveKey stays hidden while the screen is recorded, mirrored, shared or controlled remotely, and comes back when that stops." = "SaveKey stays hidden while the screen is recorded, mirrored, shared or controlled remotely, and comes back when that stops.";
 "SaveKey will open the database by its name in this folder, so it keeps working when a sync tool replaces the file with a new copy." = "SaveKey will open the database by its name in this folder, so it keeps working when a sync tool replaces the file with a new copy.";
 "Scan card with camera" = "Scan card with camera";
 "Scan QR code" = "Scan QR code";
 "Scan the front of the card, then the back. The card is read on this iPhone — nothing is uploaded. Check the details before saving." = "Scan the front of the card, then the back. The card is read on this iPhone — nothing is uploaded. Check the details before saving.";
+"Screen protection" = "Screen protection";
+"Screenshots of SaveKey are blank. You can allow them in Settings." = "Screenshots of SaveKey are blank. You can allow them in Settings.";
+"Screenshots of SaveKey come out blank, so Siri and other assistants that read the screen can’t see your passwords. On iOS 27.2 or later, you can also add SaveKey under Settings › Siri › Excluded Apps." = "Screenshots of SaveKey come out blank, so Siri and other assistants that read the screen can’t see your passwords. On iOS 27.2 or later, you can also add SaveKey under Settings › Siri › Excluded Apps.";
 "Search" = "Search";
 "Search all entries" = "Search all entries";
 "Secret" = "Secret";
@@ -423,6 +432,7 @@
 "Website icons" = "Website icons";
 "When enabled, the derived key is stored in this device's Keychain, protected by %@." = "When enabled, the derived key is stored in this device's Keychain, protected by %@.";
 "When you sign in to a website or app, tap the key icon above the keyboard and choose SaveKey." = "When you sign in to a website or app, tap the key icon above the keyboard and choose SaveKey.";
+"While the screen is recorded, mirrored, shared or controlled remotely, for example by an AI assistant, SaveKey shows only its logo." = "While the screen is recorded, mirrored, shared or controlled remotely, for example by an AI assistant, SaveKey shows only its logo.";
 "Words from the EFF long word list (7,776 words, ~12.9 bits each)." = "Words from the EFF long word list (7,776 words, ~12.9 bits each).";
 "Words: %lld" = "Words: %lld";
 "Write your note" = "Write your note";

@@ -45,6 +45,12 @@ final class AppSettings: ObservableObject {
     @Published var quickTypeSuggestions: Bool { didSet { defaults.set(quickTypeSuggestions, forKey: "quickTypeSuggestions") } }
     @Published var autoFillCopiesOTP: Bool { didSet { defaults.set(autoFillCopiesOTP, forKey: "autoFillCopiesOTP") } }
     @Published var clearClipboardOnLock: Bool { didSet { defaults.set(clearClipboardOnLock, forKey: "clearClipboardOnLock") } }
+    /// Cover SaveKey while the screen is recorded, mirrored, shared or controlled remotely.
+    @Published var hideDuringScreenCapture: Bool { didSet { defaults.set(hideDuringScreenCapture, forKey: "hideDuringScreenCapture") } }
+    /// Keep SaveKey out of screenshots, and so out of assistants that read the screen (iOS 27 and later).
+    @Published var blockScreenshots: Bool { didSet { defaults.set(blockScreenshots, forKey: "blockScreenshots") } }
+    /// Let third-party keyboards type in SaveKey. When off, SaveKey always uses Apple's keyboard.
+    @Published var allowOtherKeyboards: Bool { didSet { defaults.set(allowOtherKeyboards, forKey: "allowOtherKeyboards") } }
     @Published var entrySort: EntrySort { didSet { defaults.set(entrySort.rawValue, forKey: "entrySort") } }
     @Published var showRecycleBin: Bool { didSet { defaults.set(showRecycleBin, forKey: "showRecycleBin") } }
     /// Show each website's logo for entries with a web address (downloads logos from those sites).
@@ -66,6 +72,9 @@ final class AppSettings: ObservableObject {
             "quickTypeSuggestions": false,
             "autoFillCopiesOTP": true,
             "clearClipboardOnLock": true,
+            "hideDuringScreenCapture": true,
+            "blockScreenshots": true,
+            "allowOtherKeyboards": false,
             "showRecycleBin": true,
             "showWebsiteIcons": false,
         ])
@@ -77,6 +86,9 @@ final class AppSettings: ObservableObject {
         quickTypeSuggestions = defaults.bool(forKey: "quickTypeSuggestions")
         autoFillCopiesOTP = defaults.bool(forKey: "autoFillCopiesOTP")
         clearClipboardOnLock = defaults.bool(forKey: "clearClipboardOnLock")
+        hideDuringScreenCapture = defaults.bool(forKey: "hideDuringScreenCapture")
+        blockScreenshots = defaults.bool(forKey: "blockScreenshots")
+        allowOtherKeyboards = defaults.bool(forKey: "allowOtherKeyboards")
         showRecycleBin = defaults.bool(forKey: "showRecycleBin")
         showWebsiteIcons = defaults.bool(forKey: "showWebsiteIcons")
         appearance = AppAppearance(rawValue: defaults.string(forKey: "appearance") ?? "") ?? .system

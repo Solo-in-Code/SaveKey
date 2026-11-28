@@ -26,10 +26,30 @@ struct AppSettingsView: View {
                         }
                         Toggle("Remember key files", isOn: $settings.rememberKeyFiles)
                         Toggle("Show passwords by default", isOn: $settings.showPasswordsByDefault)
+                        Toggle("Allow other keyboards", isOn: $settings.allowOtherKeyboards)
                     } header: {
                         Text("Security")
                     } footer: {
-                        Text("Copied items never sync to other devices via Universal Clipboard.")
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("Copied items never sync to other devices via Universal Clipboard.")
+                            Text("Other keyboards, including AI keyboards, can send what you type to their developers. When this is off, SaveKey always uses Apple’s keyboard. The change applies after you close SaveKey and open it again.")
+                        }
+                    }
+
+                    Section {
+                        Toggle("Hide during screen sharing", isOn: $settings.hideDuringScreenCapture)
+                        if ScreenshotBlocking.isAvailable {
+                            Toggle("Block screenshots", isOn: $settings.blockScreenshots)
+                        }
+                    } header: {
+                        Text("Screen protection")
+                    } footer: {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("While the screen is recorded, mirrored, shared or controlled remotely, for example by an AI assistant, SaveKey shows only its logo.")
+                            if ScreenshotBlocking.isAvailable {
+                                Text("Screenshots of SaveKey come out blank, so Siri and other assistants that read the screen can’t see your passwords. On iOS 27.2 or later, you can also add SaveKey under Settings › Siri › Excluded Apps.")
+                            }
+                        }
                     }
 
                     Section {

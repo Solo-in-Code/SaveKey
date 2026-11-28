@@ -29,7 +29,8 @@ leaves the places you keep it. See the [privacy policy](PRIVACY.md).
 | **Database settings** | Name, description, default username, Recycle Bin, history limits, cipher, KDF and its cost (with 1-second calibration), compression, master key / key file change. |
 | **Password AutoFill** | Extension that suggests entries matching the website, with search and Face ID. Optional QuickType suggestions (usernames and domains only). Copies the TOTP code after filling. |
 | **Sync** | While a database is open, SaveKey checks the file every few seconds and whenever you return to the app. Changes saved elsewhere are merged in the way KeePassXC's *Merge From Database* does it, also when you save on the iPhone after the file changed. A database opened read-only simply shows the latest version. "Open from a synced folder" and "Follow in folder…" make SaveKey find the file by its name in its folder, so it keeps working when rclone, Syncthing and similar tools replace the file. Conflict copies (rclone bisync, Syncthing, Dropbox, Nextcloud, iCloud) are offered for merging. See [Syncing with KeePassXC](#syncing-with-keepassxc-on-a-computer). |
-| **Security** | Auto-lock after a timeout in the background, privacy screen in the app switcher, clipboard items local-only (no Universal Clipboard) with expiry, and decrypted attachments kept in a protected temp folder that is wiped on lock. |
+| **Security** | Auto-lock after a timeout in the background, a privacy cover in the app switcher (over open sheets too), clipboard items local-only (no Universal Clipboard) with expiry, and decrypted attachments kept in a protected temp folder that is wiped on lock. |
+| **Screen protection** | Keeps passwords away from AI assistants and anything else that reads the screen (Settings › Screen protection). While iOS reports that the screen is being recorded, mirrored, shared or controlled remotely, SaveKey shows only its logo, above every sheet and alert, and nothing underneath can be tapped. On iOS 27 and later, screenshots of SaveKey come out blank, which also keeps out Siri AI's onscreen awareness, since it reads the screen the same way. Settings › Security › Allow other keyboards (off by default) makes SaveKey always use Apple's keyboard, so third-party and AI keyboards can't read what you type. |
 
 ## Syncing with KeePassXC on a computer
 
@@ -228,7 +229,10 @@ The engine (`Packages/KeePassCore`) was built and tested with Swift 6.0 (`swift 
 The **iOS app** is built with Xcode 27 from `SaveKey-Free.xcodeproj` and runs on an iPhone with
 iOS 27, including payment cards, website icons and syncing. `SaveKey.xcodeproj`, which adds the
 Password AutoFill extension, also builds (for the iPhone simulator), but AutoFill itself hasn't been
-tried with this version yet: running it on an iPhone needs a paid developer account.
+tried with this version yet: running it on an iPhone needs a paid developer account. The screen
+protection (new since 1.0.0) was tried on that iPhone too: screenshots of SaveKey come out blank, a
+screen recording shows only the logo screen, the app switcher shows only the logo even with the
+password generator open, and a third-party keyboard isn't offered.
 
 ## Known limitations
 
@@ -245,6 +249,12 @@ tried with this version yet: running it on an iPhone needs a paid developer acco
 - The AutoFill extension opens databases read-only. iOS limits extension memory to roughly 120 MB,
   so keep Argon2 memory at 64 MiB or less.
 - The app is iPhone-only (`TARGETED_DEVICE_FAMILY = 1`).
+- Screen protection can't stop everything. iOS has no public way to block screenshots: SaveKey uses
+  the same undocumented technique as Signal, on iOS 27 and later only, and if a future iOS changes it,
+  SaveKey simply stops blocking screenshots (it doesn't crash); the logo screen during recording,
+  mirroring and remote control uses Apple's public API and keeps working. Nothing stops a camera
+  pointed at the screen. SaveKey shares nothing with Siri, and on iOS 27.2 or later you can also add it
+  under Settings › Siri › Excluded Apps.
 
 ## Contributing
 

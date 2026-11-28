@@ -21,7 +21,8 @@ Once a fix is available, the report can be published with credit to you, if you 
 
 In scope: the KDBX reader and writer and the cryptography in `Packages/KeePassCore`; master key and
 key file handling; Face ID quick unlock and the Keychain; the AutoFill extension; the clipboard;
-attachments; file access and sync.
+screen protection (the cover during screen capture, screenshot blocking, keyboards); attachments;
+file access and sync.
 
 Out of scope: attacks that need a jailbroken or already compromised device; weaknesses in other apps
 or services (KeePassXC, sync tools, cloud storage); and weak master passwords.

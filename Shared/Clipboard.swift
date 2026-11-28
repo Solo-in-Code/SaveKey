@@ -35,11 +35,11 @@ final class ToastCenter: ObservableObject {
     @Published var message: String?
     private var hideTask: Task<Void, Never>?
 
-    func show(_ text: String) {
+    func show(_ text: String, seconds: Double = 1.8) {
         message = text
         hideTask?.cancel()
         hideTask = Task { [weak self] in
-            try? await Task.sleep(nanoseconds: 1_800_000_000)
+            try? await Task.sleep(nanoseconds: UInt64(seconds * 1_000_000_000))
             if !Task.isCancelled { self?.message = nil }
         }
     }
